@@ -1,4 +1,4 @@
-package com.arif.jetpackpro
+package com.arif.daggerhilt
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

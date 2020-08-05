@@ -1,8 +1,8 @@
-package com.arif.jetpackpro.util
+package com.arif.daggerhilt.util
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.arif.jetpackpro.R
+import com.arif.daggerhilt.R
 
 
 class ItemClickSupport(private val mRecyclerView: RecyclerView) {

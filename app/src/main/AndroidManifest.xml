@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.arif.jetpackpro">
+    package="com.arif.daggerhilt">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.arif.jetpackpro.MyApplication"
+        android:name="com.arif.daggerhilt.MyApplication"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +17,7 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon">
         <activity
-            android:name="com.arif.jetpackpro.ui.MainActivity"
+            android:name="com.arif.daggerhilt.ui.MainActivity"
             android:label="@string/title_activity_main_tab"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.arif.jetpackpro.ui.detail.DetailActivity" />
+        <activity android:name="com.arif.daggerhilt.ui.detail.DetailActivity" />
     </application>
 
 </manifest>

@@ -1,8 +1,8 @@
-package com.arif.jetpackpro
+package com.arif.daggerhilt
 
 import android.app.Application
-import com.arif.jetpackpro.di.AppComponent
-import com.arif.jetpackpro.di.DaggerAppComponent
+import com.arif.daggerhilt.di.AppComponent
+import com.arif.daggerhilt.di.DaggerAppComponent
 
 open class MyApplication : Application() {
 

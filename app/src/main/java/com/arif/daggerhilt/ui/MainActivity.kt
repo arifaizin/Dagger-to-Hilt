@@ -1,9 +1,9 @@
-package com.arif.jetpackpro.ui
+package com.arif.daggerhilt.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.arif.jetpackpro.R
-import com.arif.jetpackpro.ui.adapter.SectionsPagerAdapter
+import com.arif.daggerhilt.R
+import com.arif.daggerhilt.ui.adapter.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.activity_main_tab.*
 
 

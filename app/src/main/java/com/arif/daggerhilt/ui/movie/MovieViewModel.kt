@@ -1,11 +1,11 @@
-package com.arif.jetpackpro.ui.movie
+package com.arif.daggerhilt.ui.movie
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
-import com.arif.jetpackpro.data.repository.MovieRepository
-import com.arif.jetpackpro.data.entity.MovieModel
-import com.arif.jetpackpro.data.repository.Resource
+import com.arif.daggerhilt.data.repository.MovieRepository
+import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.data.repository.Resource
 import javax.inject.Inject
 
 class MovieViewModel @Inject constructor(private var movieRepository: MovieRepository) : ViewModel() {

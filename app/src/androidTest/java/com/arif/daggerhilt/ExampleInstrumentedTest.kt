@@ -1,4 +1,4 @@
-package com.arif.jetpackpro
+package com.arif.daggerhilt
 
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry

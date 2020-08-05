@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.util
+package com.arif.daggerhilt.util
 
 import android.os.Handler
 import android.os.Looper
