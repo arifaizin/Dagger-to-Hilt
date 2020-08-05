@@ -1,14 +1,14 @@
-package com.arif.jetpackpro.ui.detail
+package com.arif.daggerhilt.ui.detail
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.arif.jetpackpro.BuildConfig
-import com.arif.jetpackpro.MyApplication
-import com.arif.jetpackpro.R
-import com.arif.jetpackpro.data.entity.MovieModel
-import com.arif.jetpackpro.di.ViewModelFactory
+import com.arif.daggerhilt.BuildConfig
+import com.arif.daggerhilt.MyApplication
+import com.arif.daggerhilt.R
+import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.di.ViewModelFactory
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_detail.*
 import javax.inject.Inject

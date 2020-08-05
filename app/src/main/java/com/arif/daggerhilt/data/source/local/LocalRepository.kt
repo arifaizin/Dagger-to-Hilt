@@ -1,8 +1,8 @@
-package com.arif.jetpackpro.data.source.local
+package com.arif.daggerhilt.data.source.local
 
 import androidx.paging.DataSource
-import com.arif.jetpackpro.data.entity.MovieModel
-import com.arif.jetpackpro.data.source.local.room.MovieDao
+import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.data.source.local.room.MovieDao
 import javax.inject.Inject
 import javax.inject.Singleton
 

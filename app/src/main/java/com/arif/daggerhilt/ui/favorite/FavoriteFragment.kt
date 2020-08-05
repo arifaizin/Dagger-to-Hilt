@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.ui.favorite
+package com.arif.daggerhilt.ui.favorite
 
 
 import android.content.Context
@@ -14,16 +14,16 @@ import androidx.paging.PagedList
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cn.pedant.SweetAlert.SweetAlertDialog
-import com.arif.jetpackpro.MyApplication
-import com.arif.jetpackpro.R
-import com.arif.jetpackpro.data.repository.Resource
-import com.arif.jetpackpro.ui.detail.DetailActivity
-import com.arif.jetpackpro.ui.adapter.MoviePagedAdapter
-import com.arif.jetpackpro.data.entity.MovieModel
-import com.arif.jetpackpro.util.ItemClickSupport
-import com.arif.jetpackpro.util.gone
-import com.arif.jetpackpro.util.visible
-import com.arif.jetpackpro.di.ViewModelFactory
+import com.arif.daggerhilt.MyApplication
+import com.arif.daggerhilt.R
+import com.arif.daggerhilt.data.repository.Resource
+import com.arif.daggerhilt.ui.detail.DetailActivity
+import com.arif.daggerhilt.ui.adapter.MoviePagedAdapter
+import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.util.ItemClickSupport
+import com.arif.daggerhilt.util.gone
+import com.arif.daggerhilt.util.visible
+import com.arif.daggerhilt.di.ViewModelFactory
 import kotlinx.android.synthetic.main.fragment_favorite.*
 import javax.inject.Inject
 

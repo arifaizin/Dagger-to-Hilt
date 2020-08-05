@@ -1,11 +1,11 @@
-package com.arif.jetpackpro.di
+package com.arif.daggerhilt.di
 
 import android.content.Context
 import androidx.room.Room
-import com.arif.jetpackpro.BuildConfig
-import com.arif.jetpackpro.data.source.local.room.MovieDao
-import com.arif.jetpackpro.data.source.local.room.MovieDatabase
-import com.arif.jetpackpro.data.source.remote.retrofit.ApiService
+import com.arif.daggerhilt.BuildConfig
+import com.arif.daggerhilt.data.source.local.room.MovieDao
+import com.arif.daggerhilt.data.source.local.room.MovieDatabase
+import com.arif.daggerhilt.data.source.remote.retrofit.ApiService
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides

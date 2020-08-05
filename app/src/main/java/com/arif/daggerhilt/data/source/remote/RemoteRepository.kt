@@ -1,9 +1,9 @@
-package com.arif.jetpackpro.data.source.remote
+package com.arif.daggerhilt.data.source.remote
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.arif.jetpackpro.data.entity.MovieModel
-import com.arif.jetpackpro.data.source.remote.retrofit.ApiService
+import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.data.source.remote.retrofit.ApiService
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject

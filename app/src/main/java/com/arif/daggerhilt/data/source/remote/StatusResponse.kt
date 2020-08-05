@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.data.source.remote
+package com.arif.daggerhilt.data.source.remote
 
 enum class StatusResponse {
     SUCCESS,

@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.di
+package com.arif.daggerhilt.di
 
 // Before Dagger
 //class Injection {

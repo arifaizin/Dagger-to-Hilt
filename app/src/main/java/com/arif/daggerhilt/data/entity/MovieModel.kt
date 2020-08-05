@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.data.entity
+package com.arif.daggerhilt.data.entity
 
 import android.os.Parcelable
 import androidx.annotation.NonNull

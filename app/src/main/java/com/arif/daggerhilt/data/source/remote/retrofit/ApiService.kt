@@ -1,7 +1,7 @@
-package com.arif.jetpackpro.data.source.remote.retrofit
+package com.arif.daggerhilt.data.source.remote.retrofit
 
-import com.arif.jetpackpro.BuildConfig
-import com.arif.jetpackpro.data.entity.MovieResponse
+import com.arif.daggerhilt.BuildConfig
+import com.arif.daggerhilt.data.entity.MovieResponse
 import kotlinx.coroutines.Deferred
 import retrofit2.http.GET
 import retrofit2.http.Query

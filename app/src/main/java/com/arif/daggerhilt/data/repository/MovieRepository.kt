@@ -1,13 +1,13 @@
-package com.arif.jetpackpro.data.repository
+package com.arif.daggerhilt.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.arif.jetpackpro.data.source.local.LocalRepository
-import com.arif.jetpackpro.data.source.remote.ApiResponse
-import com.arif.jetpackpro.data.source.remote.RemoteRepository
-import com.arif.jetpackpro.data.entity.MovieModel
-import com.arif.jetpackpro.util.AppExecutors
+import com.arif.daggerhilt.data.source.local.LocalRepository
+import com.arif.daggerhilt.data.source.remote.ApiResponse
+import com.arif.daggerhilt.data.source.remote.RemoteRepository
+import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.util.AppExecutors
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -1,10 +1,10 @@
-package com.arif.jetpackpro.di
+package com.arif.daggerhilt.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.arif.jetpackpro.ui.detail.DetailMovieViewModel
-import com.arif.jetpackpro.ui.favorite.FavoriteViewModel
-import com.arif.jetpackpro.ui.movie.MovieViewModel
+import com.arif.daggerhilt.ui.detail.DetailMovieViewModel
+import com.arif.daggerhilt.ui.favorite.FavoriteViewModel
+import com.arif.daggerhilt.ui.movie.MovieViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

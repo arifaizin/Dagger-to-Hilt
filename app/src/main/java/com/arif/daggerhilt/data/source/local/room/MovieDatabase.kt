@@ -1,8 +1,8 @@
-package com.arif.jetpackpro.data.source.local.room
+package com.arif.daggerhilt.data.source.local.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.arif.jetpackpro.data.entity.MovieModel
+import com.arif.daggerhilt.data.entity.MovieModel
 
 @Database(entities = [MovieModel::class],
     version = 1,

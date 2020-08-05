@@ -1,12 +1,12 @@
-package com.arif.jetpackpro.ui.adapter
+package com.arif.daggerhilt.ui.adapter
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.arif.jetpackpro.R
-import com.arif.jetpackpro.ui.favorite.FavoriteFragment
-import com.arif.jetpackpro.ui.movie.MovieFragment
+import com.arif.daggerhilt.R
+import com.arif.daggerhilt.ui.favorite.FavoriteFragment
+import com.arif.daggerhilt.ui.movie.MovieFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_text_1,

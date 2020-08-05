@@ -1,9 +1,9 @@
-package com.arif.jetpackpro.di
+package com.arif.daggerhilt.di
 
 import android.content.Context
-import com.arif.jetpackpro.ui.detail.DetailActivity
-import com.arif.jetpackpro.ui.favorite.FavoriteFragment
-import com.arif.jetpackpro.ui.movie.MovieFragment
+import com.arif.daggerhilt.ui.detail.DetailActivity
+import com.arif.daggerhilt.ui.favorite.FavoriteFragment
+import com.arif.daggerhilt.ui.movie.MovieFragment
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton

@@ -1,10 +1,10 @@
-package com.arif.jetpackpro.data.repository
+package com.arif.daggerhilt.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.arif.jetpackpro.data.source.remote.ApiResponse
-import com.arif.jetpackpro.data.source.remote.StatusResponse
-import com.arif.jetpackpro.util.AppExecutors
+import com.arif.daggerhilt.data.source.remote.ApiResponse
+import com.arif.daggerhilt.data.source.remote.StatusResponse
+import com.arif.daggerhilt.util.AppExecutors
 
 
 abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecutors: AppExecutors) {

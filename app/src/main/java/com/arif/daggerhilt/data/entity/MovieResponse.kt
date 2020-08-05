@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.data.entity
+package com.arif.daggerhilt.data.entity
 
 import com.google.gson.annotations.SerializedName
 import javax.annotation.Generated

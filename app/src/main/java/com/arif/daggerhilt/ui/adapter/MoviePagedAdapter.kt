@@ -1,4 +1,4 @@
-package com.arif.jetpackpro.ui.adapter
+package com.arif.daggerhilt.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.arif.jetpackpro.BuildConfig
-import com.arif.jetpackpro.R
-import com.arif.jetpackpro.data.entity.MovieModel
+import com.arif.daggerhilt.BuildConfig
+import com.arif.daggerhilt.R
+import com.arif.daggerhilt.data.entity.MovieModel
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_movie.view.*
 
