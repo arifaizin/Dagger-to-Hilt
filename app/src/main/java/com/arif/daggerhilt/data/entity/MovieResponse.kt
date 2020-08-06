@@ -1,9 +1,7 @@
 package com.arif.daggerhilt.data.entity
 
 import com.google.gson.annotations.SerializedName
-import javax.annotation.Generated
 
-@Generated("com.robohorse.robopojogenerator")
 data class MovieResponse(
 
     @field:SerializedName("page")
