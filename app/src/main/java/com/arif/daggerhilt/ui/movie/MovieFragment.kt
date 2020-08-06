@@ -1,6 +1,5 @@
 package com.arif.daggerhilt.ui.movie
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,26 +12,19 @@ import androidx.paging.PagedList
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cn.pedant.SweetAlert.SweetAlertDialog
-import com.arif.daggerhilt.MyApplication
 import com.arif.daggerhilt.R
-import com.arif.daggerhilt.ui.detail.DetailActivity
-import com.arif.daggerhilt.ui.adapter.MoviePagedAdapter
 import com.arif.daggerhilt.data.entity.MovieModel
-import com.arif.daggerhilt.util.ItemClickSupport
-import com.arif.daggerhilt.di.ViewModelFactory
 import com.arif.daggerhilt.data.repository.Resource
+import com.arif.daggerhilt.ui.adapter.MoviePagedAdapter
+import com.arif.daggerhilt.ui.detail.DetailActivity
+import com.arif.daggerhilt.util.ItemClickSupport
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_main_tab.*
-import javax.inject.Inject
 
-
+@AndroidEntryPoint
 class MovieFragment : Fragment() {
 
-    @Inject
-    lateinit var factory: ViewModelFactory
-
-    private val movieViewModel: MovieViewModel by viewModels {
-        factory
-    }
+    private val movieViewModel: MovieViewModel by viewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
         inflater.inflate(R.layout.fragment_main_tab, container, false)
@@ -48,11 +40,6 @@ class MovieFragment : Fragment() {
         recycleMovie.layoutManager = GridLayoutManager(activity, 2)
 
         getDataMovieOnline()
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        (context.applicationContext as MyApplication).appComponent.inject(this)
     }
 
     private fun getDataMovieOnline() {

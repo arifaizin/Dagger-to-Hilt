@@ -1,7 +1,6 @@
 package com.arif.daggerhilt.ui.favorite
 
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,28 +13,22 @@ import androidx.paging.PagedList
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cn.pedant.SweetAlert.SweetAlertDialog
-import com.arif.daggerhilt.MyApplication
 import com.arif.daggerhilt.R
-import com.arif.daggerhilt.data.repository.Resource
-import com.arif.daggerhilt.ui.detail.DetailActivity
-import com.arif.daggerhilt.ui.adapter.MoviePagedAdapter
 import com.arif.daggerhilt.data.entity.MovieModel
+import com.arif.daggerhilt.data.repository.Resource
+import com.arif.daggerhilt.ui.adapter.MoviePagedAdapter
+import com.arif.daggerhilt.ui.detail.DetailActivity
 import com.arif.daggerhilt.util.ItemClickSupport
 import com.arif.daggerhilt.util.gone
 import com.arif.daggerhilt.util.visible
-import com.arif.daggerhilt.di.ViewModelFactory
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_favorite.*
-import javax.inject.Inject
 
+@AndroidEntryPoint
 class FavoriteFragment : Fragment() {
     private lateinit var progressDialog: SweetAlertDialog
 
-    @Inject
-    lateinit var factory: ViewModelFactory
-
-    private val movieViewModel: FavoriteViewModel by viewModels {
-        factory
-    }
+    private val movieViewModel: FavoriteViewModel by viewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_favorite, container, false)
@@ -81,11 +74,6 @@ class FavoriteFragment : Fragment() {
             .setTitleText(getString(R.string.error))
             .setContentText(getString(R.string.something_wrong))
         errorDialog.show()
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        (context.applicationContext as MyApplication).appComponent.inject(this)
     }
 
     private fun showMovieList(

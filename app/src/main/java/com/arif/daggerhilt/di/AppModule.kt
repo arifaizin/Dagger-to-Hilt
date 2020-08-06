@@ -9,15 +9,19 @@ import com.arif.daggerhilt.data.source.remote.retrofit.ApiService
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.qualifiers.ApplicationContext
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
+@InstallIn(ApplicationComponent::class)
 class AppModule {
     @Singleton
     @Provides
-    fun provideDatabase(context: Context): MovieDatabase = Room.databaseBuilder(
+    fun provideDatabase(@ApplicationContext context: Context): MovieDatabase = Room.databaseBuilder(
         context,
         MovieDatabase::class.java, "Movie.db"
     ).fallbackToDestructiveMigration().build()

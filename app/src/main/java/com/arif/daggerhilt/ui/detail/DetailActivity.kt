@@ -5,25 +5,18 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.arif.daggerhilt.BuildConfig
-import com.arif.daggerhilt.MyApplication
 import com.arif.daggerhilt.R
 import com.arif.daggerhilt.data.entity.MovieModel
-import com.arif.daggerhilt.di.ViewModelFactory
 import com.bumptech.glide.Glide
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_detail.*
-import javax.inject.Inject
 
+@AndroidEntryPoint
 class DetailActivity : AppCompatActivity() {
 
-    @Inject
-    lateinit var factory: ViewModelFactory
-
-    private val detailMovieViewModel: DetailMovieViewModel by viewModels {
-        factory
-    }
+    private val detailMovieViewModel: DetailMovieViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        (application as MyApplication).appComponent.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
